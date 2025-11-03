@@ -2,7 +2,11 @@ function loadInclude(id, url) {
   fetch(url)
     .then(response => response.text())
     .then(data => {
-      document.getElementById(id).innerHTML = data;
+      const element = document.getElementById(id);
+      element.innerHTML = data;
+      if (window.componentHandler) {
+        window.componentHandler.upgradeElement(element);
+      }
     })
     .catch(err => console.error('Failed to load include:', err));
 }
