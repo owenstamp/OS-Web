@@ -7,45 +7,18 @@
   <!-- Google Material Design Lite -->
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-pink.min.css" />
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script defer src="../includes.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <style>
     body { padding: 40px; max-width: 900px; margin: auto; }
     h1 { margin-bottom: 1rem; }
     a { text-decoration: none; color: #3f51b5; }
     a:hover { text-decoration: underline; }
-    footer {
-      text-align: center;
-      margin: 40px 0 0 0;
-      padding: 16px 0;
-      background-color: #37474f;
-      color: #fff;
-    }
   </style>
 </head>
 <body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Owen Stamp</span>
-        <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" href="../index.html">Portfolio</a>
-          <a class="mdl-navigation__link" href="../tools/index.html">Tools</a>
-          <a class="mdl-navigation__link" href="index.html">Blog</a>
-        </nav>
-        <div class="mdl-layout--small-screen-only mdl-layout__drawer-button">
-          <i class="material-icons">menu</i>
-        </div>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Menu</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="../index.html">Portfolio</a>
-        <a class="mdl-navigation__link" href="../tools/index.html">Tools</a>
-        <a class="mdl-navigation__link" href="index.html">Blog</a>
-      </nav>
-    </div>
+    <div id="header-placeholder"></div>
     <main class="mdl-layout__content">
       <div style="padding: 40px;">
         <h1>Blog Coming Soon</h1>
@@ -54,10 +27,8 @@
           <strong>blog.os-web.yourdomain.com</strong>
         </p>
       </div>
-      <footer>
-        &copy; 2025 Owen Stamp
-      </footer>
     </main>
+    <div id="footer-placeholder"></div>
   </div>
 </body>
 </html>
